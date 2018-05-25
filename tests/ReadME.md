@@ -11,8 +11,6 @@
 
     操作： 
 ```
-pip install python-alipay-sdk --upgrade
-
 from alipay import AliPay
 import time,qrcode
 alipay_public_key_string = '''-----BEGIN PUBLIC KEY-----
@@ -21,6 +19,7 @@ alipay_public_key_string = '''-----BEGIN PUBLIC KEY-----
 app_private_key_string = '''-----BEGIN RSA PRIVATE KEY-----
     YOUR_APP_PRIVATE_KEY
 -----END RSA PRIVATE KEY-----'''
+
 #注意：一个是支付宝公钥，一个是应用私钥
 APP_ID = '2018052160210122'
 NOTIFY_URL = "https://your_domain/alipay_callback"
