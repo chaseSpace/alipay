@@ -10,6 +10,7 @@
    接收商品名称信息、订单金额、订单号 》》》请求“支付宝预付订单创建接口”根据返回的URL生成二维码》》》 用户扫码支付》》》一定时间内轮询订单状态，若超时未支付则关闭订单。
 
     操作： 
+```
 pip install python-alipay-sdk --upgrade
 
 from alipay import AliPay
@@ -174,7 +175,7 @@ if __name__ == '__main__':
     time.sleep(5)
     print(refund_query(out_request_no=111, out_trade_no=out_trade_no))
     #操作完登录 https://authsu18.alipay.com/login/index.htm中的对账中心查看是否有一笔交易生成并退款
-
+```
 '''
 官文：https://docs.open.alipay.com/api_1/
 创建预付订单返回值：
